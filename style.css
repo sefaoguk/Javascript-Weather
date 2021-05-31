@@ -1,0 +1,184 @@
+*{
+   
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;   
+}
+.container
+{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(img/bg3.jpg);
+    background-repeat:round;
+    font-family:sans-serif;
+}
+.containerMiddle
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    height: 100%;
+}
+.containerLeft
+{
+    display: flex;     
+    align-self: center;
+    width: 100%;
+    justify-content: center;
+
+
+}
+.containerLeft img,.containerRight img
+{
+    width: 150px;
+    height: 800px;
+    color: yellow;
+    opacity: 0.8;
+ 
+}
+.containerRight
+{
+    display: flex;  
+    justify-content: center;   
+    align-self: center;
+    width: 100%;
+}
+
+/*********** CONTENT TOP***************/
+.contentTop
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+.weatherTitle
+{
+
+    align-self: center;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    
+    
+}
+/*********** CONTENT MİDDLE***************/
+.contentMiddle
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    margin: 20px;
+   
+}
+.contentMiddle div { 
+    display: flex;
+    align-items: center;
+}
+.sehirInput
+{
+    background-color: white;;
+    padding: 10px;
+    height: 42px;
+    width: 250px;
+    border: none;
+    border:3px solid rgb(12, 98, 148);
+    border-radius: 5px 2px 2px 5px;
+}
+.sehirInput:focus
+{
+    outline: none;
+    border-color: rgb(84, 10, 223);
+}
+
+.searchButton
+{
+    width: 40px;
+    padding: 9px;
+    border-radius: 3px;
+    border:none;
+    background-color: rgb(59, 1, 167);
+
+}
+.searchButton:hover
+{
+    cursor: pointer;
+}
+.fa-search
+{
+    color:white;
+    background-color: rgb(59, 1, 167);
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+/*********** CONTENT BOTTOM***************/
+
+.contentBottom
+{
+    display: flex;
+    justify-content: center;
+    
+}
+.card
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+    background-color: transparent;
+    height: 600px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    border: 4px solid rgba(245, 245, 245, 0.2);
+    box-shadow: 1px 20px 20px 5px rgba(0, 0, 0, 0.6);
+}
+.cardHeader
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34%;
+    border-radius: 5px 5px 0 0;
+  
+}
+.cardHeader img
+{
+    width: 150px;
+    height: 150px;
+    
+}
+.cardBody
+{
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 64%;
+    border-radius: 0 0 5px 5px;
+    background-color: transparent;
+}
+@media all and  (max-width:1000px)
+{
+    .containerLeft
+    {
+        display: none;
+    }
+    .containerRight
+    {
+        display: none;
+    }
+    .container
+    {
+        justify-content: center;
+    }
+}
